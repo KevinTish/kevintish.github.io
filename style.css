@@ -239,13 +239,13 @@ h2.section-title {
   transition: background 0.2s;
 }
 .stat-item:last-child { border-right: none; }
-.stat-item:hover { background: var(--bg2); }
+.stat-item:hover { background: rgba(0,0,0,0.1); }
 
 .stat-num {
   font-family: var(--serif);
   font-size: 52px;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--gold);
   line-height: 1;
   letter-spacing: -0.03em;
 }
@@ -253,7 +253,7 @@ h2.section-title {
 .stat-label {
   font-family: var(--mono);
   font-size: 10px;
-  color: var(--muted);
+  color: rgba(255,255,255,0.75);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   margin-top: 6px;
