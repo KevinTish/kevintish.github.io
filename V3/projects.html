@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Kevin Tish</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav>
+  <a href="index.html" class="nav-logo">Kevin <span>Tish</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="ai-for-good.html">AI for Good</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-label">03 — Projects</div>
+    <h1>Built &amp;<br><em style="font-style:italic;color:var(--accent);">Designed</em></h1>
+    <p>Competition engineering work from UMD Loop and Terps Racing Baja, plus personal builds that exist because they seemed fun.</p>
+  </div>
+
+  <!-- COMPETITION PROJECTS -->
+  <section class="section">
+    <div class="section-eyebrow reveal">
+      <span class="section-label">Competition Work</span>
+      <div class="section-rule"></div>
+      <span class="section-count">01</span>
+    </div>
+    <h2 class="section-title reveal">UMD Loop &amp;<br>Terps Racing</h2>
+    <p class="section-sub reveal">Engineering deliverables from active competition teams.</p>
+
+    <!-- Project 1 — Full-width feature -->
+    <div class="project-feature reveal">
+      <div class="project-feature-img">
+        <div class="img-placeholder" style="aspect-ratio:16/9;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>images/wrist-main.jpg<br>Upload your best wrist photo</span>
+        </div>
+      </div>
+      <div class="project-feature-info">
+        <div class="card-cat" style="margin-bottom:12px;">Robotics · UMD Loop</div>
+        <div class="card-title" style="font-size:36px; margin-bottom:16px;">3-DOF Differential Wrist</div>
+        <p style="font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:20px;">
+          Developed and prototyped a spherical, three degrees of freedom differential wrist for a robotic arm, capable of uninhibited 360° motion using a combination of three Neo 550 motors on separate input shafts.
+        </p>
+        <p style="font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:24px;">
+          Incorporated a fully-custom bevel gear generator to produce two sets of unique 55° bevel gears and a planar crown gear for consistent and fluid movement along all axes of rotation.
+        </p>
+        <div class="card-tags">
+          <span class="tag">SolidWorks</span>
+          <span class="tag">Bevel Gears</span>
+          <span class="tag">Neo 550 Motors</span>
+          <span class="tag">Belt Drive</span>
+          <span class="tag">3D Printing</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo gallery for wrist -->
+    <div class="project-gallery reveal" style="margin-top:2px; margin-bottom:64px;">
+      <div class="img-placeholder square"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>images/wrist-detail-1.jpg</span></div>
+      <div class="img-placeholder square"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>images/wrist-detail-2.jpg</span></div>
+      <div class="img-placeholder square"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>images/wrist-cad.jpg</span></div>
+    </div>
+
+    <!-- Rest of competition cards -->
+    <div class="cards-grid">
+
+      <div class="card reveal">
+        <div class="card-arrow">↗</div>
+        <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="var(--accent)" stroke-width="1.5">
+          <rect x="6" y="20" width="36" height="16" rx="2"/>
+          <circle cx="14" cy="28" r="4"/><circle cx="34" cy="28" r="4"/>
+          <path d="M18 20v-6a6 6 0 0112 0v6"/>
+          <path d="M24 8v6"/>
+        </svg>
+        <div class="card-cat">Rover · UMD Loop</div>
+        <div class="card-title">Swerve Drivetrain Overhaul</div>
+        <div class="card-desc">Complete redesign of wheel internals and Ackermann steering — increased critical tilt angle by 15° and cut system weight by 19%.</div>
+        <div class="img-placeholder" style="margin-top:20px;margin-bottom:12px;aspect-ratio:4/3;font-size:10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>images/drivetrain.jpg</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag">Ackermann Steering</span>
+          <span class="tag">Topology Opt.</span>
+          <span class="tag">Off-road</span>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-arrow">↗</div>
+        <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="var(--accent)" stroke-width="1.5">
+          <path d="M10 38V24l14-10 14 10v14"/>
+          <path d="M18 38v-8h12v8"/>
+          <path d="M6 24l18-14 18 14"/>
+          <circle cx="24" cy="18" r="3"/>
+        </svg>
+        <div class="card-cat">Chassis · UMD Loop</div>
+        <div class="card-title">Rover Chassis Redesign</div>
+        <div class="card-desc">Streamlined main chassis to enable full avionics overhaul — reduced disassembly and repair time by over 80% through organized component layout.</div>
+        <div class="img-placeholder" style="margin-top:20px;margin-bottom:12px;aspect-ratio:4/3;font-size:10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>images/chassis.jpg</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag">SolidWorks</span>
+          <span class="tag">DFM</span>
+          <span class="tag">Avionics Integration</span>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-arrow">↗</div>
+        <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="var(--accent)" stroke-width="1.5">
+          <rect x="8" y="12" width="32" height="24" rx="2"/>
+          <path d="M16 12V8M32 12V8M8 22h32"/>
+          <circle cx="18" cy="31" r="2" fill="var(--accent)"/>
+          <circle cx="30" cy="31" r="2" fill="var(--accent)"/>
+        </svg>
+        <div class="card-cat">Electronics · UMD Loop</div>
+        <div class="card-title">LCD Keyboard Interface</div>
+        <div class="card-desc">Arduino-based system mapping a mechanical keyboard to a 1602 LCD with backspace, multi-screen storage, and real-time rendering.</div>
+        <div class="img-placeholder" style="margin-top:20px;margin-bottom:12px;aspect-ratio:4/3;font-size:10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>images/lcd-keyboard.jpg</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag">Arduino IDE</span>
+          <span class="tag">C++</span>
+          <span class="tag">1602 LCD</span>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-arrow">↗</div>
+        <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="var(--accent)" stroke-width="1.5">
+          <ellipse cx="24" cy="30" rx="14" ry="5"/>
+          <path d="M10 30V18l14-8 14 8v12"/>
+          <path d="M16 22l8-5 8 5M24 13v17"/>
+        </svg>
+        <div class="card-cat">Suspension · Terps Baja</div>
+        <div class="card-title">Control Arm Fabrication</div>
+        <div class="card-desc">Cut and coped 4130 chromoly steel for front bracing, rear roll hoop, and upper/lower control arms. Also performed CVT maintenance and case fabrication.</div>
+        <div class="img-placeholder" style="margin-top:20px;margin-bottom:12px;aspect-ratio:4/3;font-size:10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>images/control-arms.jpg</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag">4130 Steel</span>
+          <span class="tag">Welding</span>
+          <span class="tag">CNC Mill</span>
+          <span class="tag">Lathe</span>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-arrow">↗</div>
+        <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="var(--accent)" stroke-width="1.5">
+          <rect x="12" y="16" width="24" height="20" rx="2"/>
+          <path d="M18 16v-4a6 6 0 0112 0v4"/>
+          <path d="M20 28h8M24 24v8"/>
+        </svg>
+        <div class="card-cat">Research · Terps Baja</div>
+        <div class="card-title">Rear Shock Selection Study</div>
+        <div class="card-desc">Trade study evaluating rules-compliant rear shocks against travel, strength, and weight across rock crawl, hill climb, and endurance events.</div>
+        <div class="img-placeholder" style="margin-top:20px;margin-bottom:12px;aspect-ratio:4/3;font-size:10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>images/shocks.jpg</span>
+        </div>
+        <div class="card-tags">
+          <span class="tag">Shock Dynamics</span>
+          <span class="tag">Rules Compliance</span>
+          <span class="tag">Trade Study</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PERSONAL PROJECTS -->
+  <section class="section tinted">
+    <div class="section-eyebrow reveal">
+      <span class="section-label">Personal Projects</span>
+      <div class="section-rule"></div>
+      <span class="section-count">02</span>
+    </div>
+    <h2 class="section-title reveal">Built for <em style="font-style:italic;color:var(--accent);">Fun</em></h2>
+    <p class="section-sub reveal">Side projects that exist purely because they seemed like a good idea.</p>
+
+    <!-- Nerf gun — feature card -->
+    <div class="project-feature reveal" style="margin-bottom:2px;">
+      <div class="project-feature-img">
+        <div class="img-placeholder" style="aspect-ratio:16/9;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>images/nerf-controller.jpg<br>Upload your best photo</span>
+        </div>
+      </div>
+      <div class="project-feature-info">
+        <div class="card-cat" style="margin-bottom:12px;">Personal · Hardware</div>
+        <div class="card-title" style="font-size:36px;margin-bottom:16px;">Nerf Gun Controller</div>
+        <p style="font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:20px;">
+          Designed and built a custom Nerf gun controller from scratch — integrating a custom-fabricated housing, trigger mechanisms, and electronic firing control using Arduino circuitry.
+        </p>
+        <p style="font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:24px;">
+          No off-the-shelf controller components. Full mechanical and electrical design: 3D-printed housing, wired trigger switch, MOSFET-driven motor control, and a custom PCB layout.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Arduino</span>
+          <span class="tag">3D Printing</span>
+          <span class="tag">PCB Design</span>
+          <span class="tag">Mechanism Design</span>
+          <span class="tag">MOSFET Control</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nerf gallery -->
+    <div class="project-gallery reveal" style="margin-bottom:64px;">
+      <div class="img-placeholder square"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>images/nerf-internals.jpg</span></div>
+      <div class="img-placeholder square"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>images/nerf-pcb.jpg</span></div>
+      <div class="img-placeholder square"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>images/nerf-assembled.jpg</span></div>
+    </div>
+
+    <!-- LEGO McKeldin -->
+    <div class="project-feature reveal" style="flex-direction:row-reverse;">
+      <div class="project-feature-img">
+        <div class="img-placeholder" style="aspect-ratio:16/9;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>images/lego-mckeldin.jpg<br>Upload your best photo</span>
+        </div>
+      </div>
+      <div class="project-feature-info">
+        <div class="card-cat" style="margin-bottom:12px;">Personal · Scale Model</div>
+        <div class="card-title" style="font-size:36px;margin-bottom:16px;">LEGO McKeldin Mall</div>
+        <p style="font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:20px;">
+          A brick-accurate LEGO recreation of the McKeldin Mall at the University of Maryland — including the library, fountains, surrounding pathways, and campus landscaping.
+        </p>
+        <p style="font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:24px;">
+          Designed for accurate proportions and recognizable architectural details at minifigure scale, sourced through BrickLink.
+        </p>
+        <div class="card-tags">
+          <span class="tag">LEGO / BrickLink</span>
+          <span class="tag">Scale Modeling</span>
+          <span class="tag">Spatial Design</span>
+          <span class="tag">UMD</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEGO gallery -->
+    <div class="project-gallery reveal">
+      <div class="img-placeholder square"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>images/lego-library.jpg</span></div>
+      <div class="img-placeholder square"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>images/lego-fountain.jpg</span></div>
+      <div class="img-placeholder square"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>images/lego-aerial.jpg</span></div>
+    </div>
+
+  </section>
+
+</div><!-- /page -->
+
+<footer>
+  <div class="footer-copy">© 2026 <span>Kevin Tish</span> · Mechanical Engineering · UMD</div>
+  <ul class="footer-nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="ai-for-good.html">AI for Good</a></li>
+    <li><a href="ai-for-good.html">AI for Good</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</footer>
+
+<style>
+  .project-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin-bottom: 64px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+  .project-feature-img .img-placeholder {
+    height: 100%;
+    min-height: 280px;
+    border: none;
+    border-radius: 0;
+  }
+  /* Use actual image if present */
+  .project-feature-img img {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+    display: block;
+  }
+  .project-feature-info {
+    padding: 40px;
+  }
+
+  .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-bottom: 0;
+  }
+  .project-gallery .img-placeholder {
+    border-radius: 0;
+    border: 1px solid var(--border);
+  }
+  /* Actual images in gallery */
+  .project-gallery img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--border);
+  }
+
+  @media (max-width: 960px) {
+    .project-feature { grid-template-columns: 1fr; }
+    .project-gallery { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+
+<script src="main.js"></script>
+</body>
+</html>
