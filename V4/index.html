@@ -15,8 +15,8 @@
   <a href="index.html" class="nav-logo">Kevin <span>Tish</span></a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
-    <li><a href="experience.html">Professional Experience</a></li>
-    <li><a href="projects.html">Personal Projects</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
     <li><a href="ai-for-good.html">AI for Good</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
@@ -51,30 +51,14 @@
         </div>
       </div>
 
-      <!-- HERO RIGHT — headshot -->
+      <!-- HERO RIGHT — photo placeholder -->
       <div class="hero-right">
         <div class="hero-photo-wrap">
-          <!-- Geometric decorations -->
-          <div class="geo-wrap">
-            <!-- Red filled triangle top-left -->
-            <svg class="geo geo-tl" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <polygon points="0,0 80,0 0,80" fill="#CE1126" opacity="0.9"/>
-            </svg>
-            <!-- Gold outlined square bottom-right -->
-            <svg class="geo geo-br" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="3" y="3" width="54" height="54" stroke="#FCD116" stroke-width="5" fill="none"/>
-            </svg>
-            <!-- Red outlined diamond top-right -->
-            <svg class="geo geo-tr" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <polygon points="25,2 48,25 25,48 2,25" stroke="#CE1126" stroke-width="4" fill="none"/>
-            </svg>
-            <!-- Gold filled bar bottom-left -->
-            <svg class="geo geo-bl" viewBox="0 0 70 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="70" height="12" fill="#FCD116" opacity="0.85"/>
-            </svg>
-            <!-- Actual photo -->
-            <img src="images/headshot.jpg" alt="Kevin Tish" class="hero-photo-img">
+          <div class="img-placeholder tall">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span>Upload your photo<br>images/headshot.jpg</span>
           </div>
+          <div class="hero-photo-accent"></div>
         </div>
       </div>
 
@@ -250,10 +234,11 @@
 
 <footer>
   <div class="footer-copy">© 2026 <span>Kevin Tish</span> · Mechanical Engineering · UMD</div>
-    <ul class="footer-nav">
+  <ul class="footer-nav">
     <li><a href="index.html">Home</a></li>
-    <li><a href="experience.html">Professional Experience</a></li>
-    <li><a href="projects.html">Personal Projects</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="ai-for-good.html">AI for Good</a></li>
     <li><a href="ai-for-good.html">AI for Good</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
@@ -324,71 +309,30 @@
   .hero-photo-wrap {
     position: relative;
   }
-
-  .geo-wrap {
+  .hero-photo-wrap .img-placeholder {
+    aspect-ratio: 3/4;
+    border-radius: 2px;
     position: relative;
-    display: inline-block;
-    width: 100%;
+    z-index: 1;
   }
-
-  .hero-photo-img {
+  .hero-photo-wrap img {
     width: 100%;
     aspect-ratio: 3/4;
     object-fit: cover;
-    object-position: center top;
+    border-radius: 2px;
     display: block;
     position: relative;
     z-index: 1;
-    border-radius: 2px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
   }
-
-  /* Geometric SVG decorations */
-  .geo {
+  /* Decorative corner accent */
+  .hero-photo-accent {
     position: absolute;
-    z-index: 2;
-    pointer-events: none;
-  }
-
-  /* Red triangle — top left, overlaps corner */
-  .geo-tl {
-    width: 72px;
-    height: 72px;
-    top: -18px;
-    left: -18px;
-  }
-
-  /* Gold square outline — bottom right */
-  .geo-br {
-    width: 80px;
-    height: 80px;
-    bottom: -22px;
-    right: -22px;
+    bottom: -14px; right: -14px;
+    width: 100%; height: 100%;
+    border: 2px solid var(--gold);
+    border-radius: 2px;
     z-index: 0;
-  }
-
-  /* Red diamond outline — top right */
-  .geo-tr {
-    width: 52px;
-    height: 52px;
-    top: -20px;
-    right: -16px;
-    animation: spin-slow 18s linear infinite;
-  }
-
-  /* Gold bar — bottom left */
-  .geo-bl {
-    width: 80px;
-    height: 12px;
-    bottom: 28px;
-    left: -28px;
-    transform: rotate(-90deg);
-    transform-origin: left center;
-  }
-
-  @keyframes spin-slow {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
+    opacity: 0.5;
   }
 
   .about-grid {
