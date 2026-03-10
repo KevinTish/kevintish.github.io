@@ -1,3 +1,2 @@
-# GitHub Pages configuration
-# Disables Jekyll so the HTML file is served as-is
+# GitHub Pages — disable Jekyll so HTML is served as-is
 plugins: []
